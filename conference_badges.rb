@@ -22,7 +22,6 @@ end
 
 def assign_rooms(speaker_array)
 
-
   hash=Hash.new
   speaker_array.each_with_index do |items, index|
     hash[items]=index+1
