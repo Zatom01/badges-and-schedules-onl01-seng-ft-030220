@@ -27,7 +27,7 @@ def assign_rooms(speaker_array)
     hash[items]=index+1
   end
 
-  speaker_array.each do |speaker|
+  speaker_array.collect do |speaker|
     puts "Hello, #{speaker}! You'll be assigned to room #{hash[speaker]}!"
   end
 
