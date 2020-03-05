@@ -40,6 +40,14 @@ end
   
   
   
-def printer
-  puts batch_badge_creater(speakers)
-  puts assign_rooms(speakers)
+def printer(speaker_array)
+  batch_badge_creator(speaker_array).each do |element|
+    puts element
+  end
+
+  assign_rooms(speaker_array).each do |element|
+    puts element
+  end
+
+
+end
