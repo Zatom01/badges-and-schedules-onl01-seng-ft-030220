@@ -21,15 +21,19 @@ end
 
 
 def assign_rooms(speaker_array)
-
+  new_array=[]
+  
   hash=Hash.new
   speaker_array.each_with_index do |items, index|
     hash[items]=index+1
   end
 
-  speaker_array.collect do |speaker|
-    puts "Hello, #{speaker}! You'll be assigned to room #{hash[speaker]}!"
+  speaker_array.each do |speaker|
+    new_array.push( "Hello, #{speaker}! You'll be assigned to room #{hash[speaker]}!")
   end
+  
+  new_array
+  
 
 end
   
