@@ -38,6 +38,8 @@ def assign_rooms(speaker_array)
 end
   
   
-# def printer
-#   puts batch_badge_creater(speakers)
-#   puts assign_rooms(speakers)
+  
+  
+def printer
+  puts batch_badge_creater(speakers)
+  puts assign_rooms(speakers)
